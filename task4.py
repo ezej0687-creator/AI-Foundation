@@ -10,6 +10,9 @@ last_item = docs.pop()
 backup = docs[0:3] = ["Sam, Jack, Fred"]
 backup_docs = backup.copy()
 
+for name in backup:
+    print(name.split(","))
+
 
 print(docs[0])
 print(docs[0:3])
