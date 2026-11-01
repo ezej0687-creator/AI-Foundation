@@ -12,3 +12,5 @@ check = "sam" in person
 print(check)  
 print(type(single))
 print(type(not_a_tuple))
+print(person[0:2])
+print(type(person[0:2]))
