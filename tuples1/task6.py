@@ -42,5 +42,12 @@ print(safe)
 
 
 # safe = {key: config.get}
-# for key in ["nodel", "stream"]:
-#      print(safe)
+# for key in ["model", "stream"]:
+#     print(safe)
+
+safes = {}
+
+for key in ["model", "stream"]:
+     safes[key] = config.get(key)
+
+print(safes)
