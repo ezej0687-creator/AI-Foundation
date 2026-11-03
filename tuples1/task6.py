@@ -48,6 +48,11 @@ print(safe)
 safes = {}
 
 for key in ["model", "stream"]:
-     safes[key] = config.get(key)
+    #  safes[key] = config.get(key)
+    if key == "stream":
+         safes[key] = config.get(key, False)
+
+    elif key == "model":
+         safes[key] = config.get(key)
 
 print(safes)
