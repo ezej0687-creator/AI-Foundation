@@ -53,6 +53,6 @@ for key in ["model", "stream"]:
          safes[key] = config.get(key, False)
 
     elif key == "model":
-         safes[key] = config.get(key)
+         safes[key] = config.get(key, "default-model")
 
 print(safes)
